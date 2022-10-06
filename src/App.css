@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 .weatherCard {
   border: double 8px #000;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 650px;
   padding: 10px 20px;
 }
 .data {
@@ -35,12 +38,12 @@
 }
 .appTitle {
   margin: 0 auto 5px auto;
-  max-width: 660px;
+  max-width: 650px;
 }
 .header {
   display: flex;
   margin: 10px auto 0 auto;
-  max-width: 660px;
+  max-width: 650px;
   justify-content: flex-end;
 }
 .header a {
