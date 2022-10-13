@@ -46,22 +46,22 @@ function Home() {
     }, [weatherData]);
 
     // Display this weather data in our app
-    console.log("state value", weatherData);
+    // console.log("state value", weatherData);
 
     return (
-        <div>
-            <Header />
-            <h1 class="appTitle">Weather App</h1>
-            <WeatherCard 
-            city={city}
-            cloudiness={cloudiness}
-            currentTemp={Math.round(currentTemp)}
-            highTemp={Math.round(highTemp)}
-            humidity={humidity}
-            lowTemp={Math.round(lowTemp)}
-            weatherType={weatherType}
-            windSpeed={windSpeed}
-            />
+        <div class="App" style={{ backgroundColor: `rgb(0, 0, 0, ${cloudiness / 200}`}}>
+                <Header />
+                <h1 class="appTitle">Weather App</h1>
+                <WeatherCard 
+                    city={city}
+                    cloudiness={cloudiness}
+                    currentTemp={Math.round(currentTemp)}
+                    highTemp={Math.round(highTemp)}
+                    humidity={humidity}
+                    lowTemp={Math.round(lowTemp)}
+                    weatherType={weatherType}
+                    windSpeed={windSpeed}
+                />
         </div>)
     ;
 }

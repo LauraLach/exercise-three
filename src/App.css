@@ -2,28 +2,31 @@
   box-sizing: border-box;
 }
 .weatherCard {
+  background-color: white;
   border: double 8px #000;
   margin: 0 auto;
   max-width: 650px;
+  overflow: auto;
   padding: 10px 20px;
-}
-.data {
-  display: flex;
 }
 .weatherCard h2 {
   color: #4d97dc;
   font-size: 120px;
+  font-weight: 600;
   margin: 0;
+}
+.data {
+  display: flex;
 }
 .currentWeatherType {
   font-size: 100px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 .currentTemp {
   font-size: 100px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0 80px 0 0;
 }
 .miscData {
@@ -42,9 +45,10 @@
 }
 .header {
   display: flex;
-  margin: 10px auto 0 auto;
-  max-width: 650px;
   justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 650px;
+  padding-top: 10px;
 }
 .header a {
   color: #000;
@@ -59,4 +63,17 @@
 .header a:hover,
 .header a:active {
   color: #4d97dc;
+}
+.currentWeatherTypeAndIcon {
+  align-items: flex-end;
+  display: flex;
+  margin-right: 40px;
+}
+.weatherCard svg {
+  height: auto;
+  padding-bottom: 19px;
+  width: 50px;
+}
+.App {
+  min-height: 100vh;
 }
